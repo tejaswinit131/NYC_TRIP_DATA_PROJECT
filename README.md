@@ -33,7 +33,7 @@ The project contains the following scripts:
 Extraction Part
 
 
-NYC_TRIP_DATA_EXTRACTION.py 
+NYC_TRIP_DATA_EXTRACTION.ipynb
 
 I extracted taxi trip data for three months in 2019. Attempting to process data for the entire year or six months resulted in a fatal error: "The Python kernel is unresponsive." 
 Due to system limitations, I couldn't execute the extraction for a year and for six months. So , i took one month of trip_data which is easily processed in my system.
@@ -47,7 +47,7 @@ The combination of requests.Session() and Retry from urllib3 provides a robust w
 
 **Processing Part**
 
-NYC_TRIP_DATA_PROCESSING.py 
+NYC_TRIP_DATA_PROCESSING.ipynb 
 
 After extracting the parquet files, I checked their schemas using df.printSchema(). The "For-Hire Vehicle Trip Records" files lacked the required columns, so I skipped these files and applied transformations to the remaining ones.
 
@@ -55,7 +55,10 @@ Transformations included:
 
 Cleaning and transforming the data for analysis. Removing trips with missing or corrupt data. Deriving new columns such as trip duration and average speed. Aggregating data to calculate total trips and average fare per day. I displayed five records of each transformed DataFrame.
 
-Loading Part
+**Loading Part**
+
+NYC_TRIP_DATA_PROCESSING_AND_LOADING.ipynb 
+
 
 I loaded processed data into a SQLite database, creating necessary tables and indexes.
 And I fillfulled the following requirments ,
@@ -65,7 +68,7 @@ And the result is shown below.
 
 **Analysis Part**
 
-NYC_TRIP_DATA_ANALYSIS.py
+NYC_TRIP_DATA_ANALYSIS.ipynb
 
 Data Analysis and Reporting
 
