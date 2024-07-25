@@ -71,7 +71,7 @@ Data Analysis and Reporting
 
 Task: Generate insights and reports from the database.
 
-I fillfued following Requirements:
+I fillfulled following Requirements:
 
 Develop SQL queries to answer the following questions:
     What are the peak hours for taxi usage?
